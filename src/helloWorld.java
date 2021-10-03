@@ -22,7 +22,30 @@ public class helloWorld {
         System.out.println("enter a word: ");
         Scanner userSelection = new Scanner(System.in);
         String selectedWord = userSelection.next();
-        System.out.println(selectedWord.substring(selectedWord.length()-3)); //
+        System.out.println(selectedWord.substring(selectedWord.length()-1)); //
+
+        Account user1 = new Account(1122,20000,4.5);
+
+
+        System.out.println("\nAccount ID:" + user1.getId() + "\nAccount Balance: " + user1.getBalance() +"\nAnnual interest rate: " + user1.getAnnualInterestRate() );
+
+        System.out.println("\nWithdrawal amount: ");
+        Scanner userWithdrawalAmount = new Scanner(System.in);
+        double withdrawalAmount = userWithdrawalAmount.nextDouble();
+
+        user1.withdraw(withdrawalAmount);
+        System.out.println("\n your balance is: " + user1.getBalance() + "\nDeposit amount: ");
+        Scanner userDepositAmount = new Scanner(System.in);
+        double depositAmount = userDepositAmount.nextDouble();
+
+        user1.deposit(depositAmount);
+        System.out.println("\n Your balance: " + user1.getBalance());
+        System.out.println("\n Date created: "+user1.getDateCreated());
+
+
+
+
+
 
 /* come back to this
         ArrayList<String> wordArray = new ArrayList<String>();
