@@ -1,4 +1,5 @@
 import java.awt.desktop.SystemSleepListener;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class helloWorld {
@@ -16,14 +17,15 @@ public class helloWorld {
         System.out.println("Give me a day of the week: ");
         Scanner dayOfWeek = new Scanner(System.in);
         String daySelected = dayOfWeek.next();
-        System.out.println("\nHappy "+dayOfWeek+"!");
+        System.out.println("\nHappy "+daySelected+"!");
 
         System.out.println("enter a word: ");
         Scanner userSelection = new Scanner(System.in);
         String selectedWord = userSelection.next();
-        System.out.println("new test test");
-
-
+/* come back to this
+        ArrayList<String> wordArray = new ArrayList<String>();
+        wordArray.add(selectedWord);
+*/
 
 
     }
