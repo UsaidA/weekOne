@@ -22,6 +22,8 @@ public class helloWorld {
         System.out.println("enter a word: ");
         Scanner userSelection = new Scanner(System.in);
         String selectedWord = userSelection.next();
+        System.out.println(selectedWord.substring(selectedWord.length()-3)); //
+
 /* come back to this
         ArrayList<String> wordArray = new ArrayList<String>();
         wordArray.add(selectedWord);
