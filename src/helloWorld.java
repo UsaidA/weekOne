@@ -21,7 +21,7 @@ public class helloWorld {
         System.out.println("enter a word: ");
         Scanner userSelection = new Scanner(System.in);
         String selectedWord = userSelection.next();
-
+        System.out.println("new test test");
 
 
 
